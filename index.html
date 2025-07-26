@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Buat Nadya 💖</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fff5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.5s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        .kejutan-box {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.2);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: scale(0.9);
+            animation: scaleIn 0.8s forwards 1s;
+        }
+
+        .gift-image {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .message {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn 1s forwards 1.5s;
+        }
+
+        .btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+            opacity: 0;
+            animation: fadeIn 1s forwards 2s;
+        }
+
+        .btn:hover {
+            background-color: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 107, 107, 0.6);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .hidden-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.8s ease-out;
+            text-align: center;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff6b6b;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .cat {
+            position: fixed;
+            bottom: -100px;
+            right: 30px;
+            width: 50px;
+            height: auto;
+            z-index: 100;
+            transition: all 1s ease-out;
+        }
+
+        .cat.active {
+            bottom: 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .heart {
+            position: absolute;
+            pointer-events: none;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .message {
+                font-size: 1rem;
+            }
+            .gift-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Untuk Nadya💖</h1>
+        
+        <div class="kejutan-box">
+            <img src="kamu.jpeg" alt="Surat dengan segel merah dan pita untuk pesan rahasia" class="gift-image">
+            
+            <p class="message">Baca pelan-pelan yaa... </p>
+            
+            <button class="btn" id="bukaBtn">Buka Pesan</button>
+            <img src="love.png" alt="Animasi kucing lucu" class="cat" id="cat">
+            
+            <div class="hidden-content" id="kejutanContent">
+                <h2 style="color: #ff6b6b; margin-bottom: 20px;">💌 PESAN RAHASIA 💌</h2>
+                <imsizeg src="dia.jpeg" alt="Kertas dengan tulisan pesan rahasia dan beberapa love heart" style="max-width: 100%; border-radius: 8px; margin-bottom: 20px;">
+                <p style="font-size: 1.1rem; color: #555; margin-bottom: 15px; font-weight: bold;">Nadya yang selalu kurindu</p>
+                <p style="font-size: 1rem; color: #777; line-height: 1.8;">
+                    Aku tahu, mungkin terdengar aneh mencintai seseorang yang belum pernah kutatap langsung matanya, belum pernah kudengar tawanya secara nyata, atau kugenggam tangannya. Tapi perasaan ini nyata. Setiap kata yang kita tukar, setiap malam yang kita lewati saling bercerita, membuatmu terasa begitu dekat di hatiku.
+                     
+                    
+                    <br><br>
+                    Aku belum pernah melihat senyummu, tapi aku tahu itu indah—karena hatimu sudah terlebih dulu memikatku. Aku belum pernah duduk di sampingmu, tapi entah kenapa, dunia terasa lebih tenang saat aku memikirkanmu.
+
+                    <br><br>
+                    Mungkin jarak memisahkan kita saat ini, tapi rasaku tak pernah tahu apa itu jarak. Aku menunggumu. Dan sampai saatnya tiba—saat aku akhirnya bisa menatapmu tanpa layar di antara kita—izinkan aku mencintaimu lewat kata, lewat doa, lewat hati yang selalu memikirkanmu.
+
+                    
+                </p>
+                <p style="font-style: italic; margin-top: 20px;">Sehat selalu buat kamuuuuu 💖</p>
+                <div style="margin-top:30px">
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('bukaBtn');
+            const content = document.getElementById('kejutanContent');
+            const body = document.querySelector('body');
+            
+            btn.addEventListener('click', function() {
+                // Tampilkan konten kejutan
+                content.style.maxHeight = content.scrollHeight + 'px';
+                
+                // Sembunyikan tombol
+                btn.style.display = 'none';
+                
+                // Ubah warna background
+                body.style.backgroundColor = '#fff0f0';
+                
+                // Buat efek confetti
+                createConfetti();
+                
+                // Putar musik/suara (opsional)
+                playSound();
+                
+                // Aktifkan animasi kucing
+                document.getElementById('cat').classList.add('active');
+            });
+            
+            function createConfetti() {
+                const colors = ['#ff6b6b', '#ffb8b8', '#ffdd59', '#4bcffa', '#05c46b'];
+                
+                for (let i = 0; i < 150; i++) {
+                    // Add some heart elements
+                    if (i%10 === 0) {
+                        const heart = document.createElement('div');
+                        heart.className = 'heart';
+                        heart.innerHTML = '❤️';
+                        heart.style.left = Math.random() * 100 + 'vw';
+                        heart.style.top = '-20px';
+                        heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+                        document.body.appendChild(heart);
+                        setTimeout(() => heart.remove(), 4000);
+                    }
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.top = -10 + 'px';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.width = Math.random() * 10 + 5 + 'px';
+                    confetti.style.height = confetti.style.width;
+                    confetti.style.opacity = Math.random() + 0.5;
+                    
+                    document.body.appendChild(confetti);
+                    
+                    // Animasi confetti jatuh
+                    animateConfetti(confetti);
+                }
+            }
+            
+            function animateConfetti(el) {
+                const duration = Math.random() * 3 + 2;
+                
+                el.animate([
+                    { top: '-10px', transform: 'rotate(0deg)' },
+                    { top: '100vh', transform: 'rotate(360deg)' }
+                ], {
+                    duration: duration * 1000,
+                    easing: 'cubic-bezier(0.1, 0.8, 0.9, 1)'
+                });
+                
+                // Hapus confetti setelah animasi selesai
+                setTimeout(() => {
+                    el.remove();
+                }, duration * 1000);
+            }
+            
+            function playSound() {
+                // Buat elemen audio untuk efek suara
+                const audio = new Audio();
+                audio.src = "anti.mp3";
+                audio.play().catch(e => console.log("Autoplay dihalangi: ", e));
+            }
+        });
+    </script>
+</body>
+</html>
+
